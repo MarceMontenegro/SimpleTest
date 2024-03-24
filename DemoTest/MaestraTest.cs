@@ -1,12 +1,12 @@
 using Demo;
 namespace DemoTest
 {
-    public class UnitTest1
+    public class MaestraTest
     {
         [Fact]
-        public void Test1()
+        public void DeberiaVerificarElNombre()
         {
-            Printer print = new Printer();
+            
             Maestra maestra = new Maestra()
             {
                 _nombre = "gilda",
@@ -16,7 +16,7 @@ namespace DemoTest
             
 
             var result = maestra.CaracteristicaCompleta;
-            Assert.Equal("gilda 2 matematica",result);
+            Assert.Equal("gilda 2 matematica", Printer.Print(maestra));
         }
     }
 }

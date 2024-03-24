@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 using Demo.Interfaz;
 namespace Demo
 {
-    public  class Printer
+    public static class Printer
     {
-       public string Print(Icarteriztica any)
+       public static string Print(Icarteriztica any)
         {
             return any.CaracteristicaCompleta;
         }
